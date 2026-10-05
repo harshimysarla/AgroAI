@@ -1,0 +1,54 @@
+{
+  "model_name": "TomatoCare_EfficientNetB0",
+  "architecture": "EfficientNetB0",
+  "version": "1.0.0",
+  "timestamp": "2026-10-05T15:15:20.669862+00:00",
+  "input_shape": [
+    224,
+    224,
+    3
+  ],
+  "num_classes": 10,
+  "classes": [
+    "Tomato___Bacterial_spot",
+    "Tomato___Early_blight",
+    "Tomato___Late_blight",
+    "Tomato___Leaf_Mold",
+    "Tomato___Septoria_leaf_spot",
+    "Tomato___Spider_mites Two-spotted_spider_mite",
+    "Tomato___Target_Spot",
+    "Tomato___Tomato_Yellow_Leaf_Curl_Virus",
+    "Tomato___Tomato_mosaic_virus",
+    "Tomato___healthy"
+  ],
+  "dataset_summary": {
+    "total_samples": 150,
+    "train_samples": 100,
+    "val_samples": 20,
+    "test_samples": 30,
+    "class_distribution": {
+      "Tomato___Bacterial_spot": 15,
+      "Tomato___Early_blight": 15,
+      "Tomato___Late_blight": 15,
+      "Tomato___Leaf_Mold": 15,
+      "Tomato___Septoria_leaf_spot": 15,
+      "Tomato___Spider_mites Two-spotted_spider_mite": 15,
+      "Tomato___Target_Spot": 15,
+      "Tomato___Tomato_Yellow_Leaf_Curl_Virus": 15,
+      "Tomato___Tomato_mosaic_virus": 15,
+      "Tomato___healthy": 15
+    }
+  },
+  "training_params": {
+    "batch_size": 16,
+    "initial_epochs": 2,
+    "fine_tune_epochs": 1,
+    "initial_learning_rate": 0.0001,
+    "fine_tune_learning_rate": 1e-05,
+    "optimizer": "Adam",
+    "loss_function": "sparse_categorical_crossentropy",
+    "total_params": 4385197,
+    "trainable_params": 1787626,
+    "training_duration_seconds": 26.51
+  }
+}

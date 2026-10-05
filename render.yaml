@@ -1,0 +1,15 @@
+services:
+  - type: web
+    name: tomatocare-backend
+    env: docker
+    dockerfilePath: Dockerfile
+    plan: free
+    region: oregon
+    healthCheckPath: /api/health
+    envVars:
+      - key: PORT
+        value: 8000
+      - key: PROJECT_NAME
+        value: TomatoCare AI
+      - key: API_PREFIX
+        value: /api
